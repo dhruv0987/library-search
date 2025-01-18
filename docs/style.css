@@ -13,8 +13,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative; /* Added */
 }
-
 nav {
     background: #333;
     padding: 10px 0;
@@ -33,14 +33,12 @@ nav .container {
     font-size: 1.5em;
     font-weight: bold;
 }
-
 .nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
-
 .nav-links li {
     margin-left: 20px;
 }
@@ -55,6 +53,9 @@ nav .container {
     color: #ddd;
 }
 
+.search-area{
+    margin: 20px;
+}
 .search-input, .admin-input {
     padding: 10px;
     margin: 10px 0;
@@ -64,7 +65,6 @@ nav .container {
     box-sizing: border-box;
     display: block;
 }
-
 .search-button, .admin-button {
     background-color: #5cb85c;
     color: white;
@@ -84,27 +84,21 @@ nav .container {
     padding: 10px;
     border: 1px solid #eee;
     border-radius: 4px;
-     white-space: pre-line;
+    white-space: pre-line;
     overflow-x: hidden;
-
 }
-
-.admin-container {
-    max-width: 600px;
-    margin: 50px auto;
-    text-align: center;
-
+.admin-panel {
+   margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
 }
-
-.login-message, .upload-message, .register-message {
-   margin-top: 10px;
-   font-weight: bold;
+.admin-message {
+    margin-top: 10px;
+    font-weight: bold;
 }
-.login-message {
-    color: green;
-}
-
 mark {
-    background-color: yellow;
-    color: black;
+  background-color: yellow;
+  color: black;
 }

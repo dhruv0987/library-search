@@ -35,19 +35,19 @@ def allowed_file(filename):
 def is_admin(username, password):
     users_data = load_users()
     for user in users_data.get("users", []):
-      if user["username"] == username:
-           return bcrypt.checkpw(password.encode('utf-8'),cipher.decrypt(user["password"].encode('utf-8')).decode('utf-8').encode('utf-8'))
+        if user["username"] == username:
+            return bcrypt.checkpw(password.encode('utf-8'),cipher.decrypt(user["password"].encode('utf-8')).decode('utf-8').encode('utf-8'))
     return False
-    
+
 @app.route('/login', methods=['POST'])
 def login():
-  data = request.get_json()
-  username = data.get("username")
-  password = data.get("password")
-  if is_admin(username, password):
-      return jsonify({"status":"success", "message":"Admin user is logged in"}), 200
-  else:
-      return jsonify({"status":"error", "message":"Login failed"}), 401
+    data = request.get_json()
+    username = data.get("username")
+    password = data.get("password")
+    if is_admin(username, password):
+        return jsonify({"status":"success", "message":"Admin user is logged in"}), 200
+    else:
+        return jsonify({"status":"error", "message":"Login failed"}), 401
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
@@ -81,12 +81,11 @@ def register():
     users_data = load_users()
     for user in users_data.get("users", []):
         if user["username"] == username:
-             return jsonify({"message": "User exists"}), 400
+            return jsonify({"message": "User exists"}), 400
 
     hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
-
     encrypted_password = cipher.encrypt(hashed_password.decode('utf-8').encode('utf-8')).decode('utf-8')
-    
+
     users_data["users"].append({"username": username, "password": encrypted_password})
     save_users(users_data)
     return jsonify({'message': 'Admin registered successfully'}), 201

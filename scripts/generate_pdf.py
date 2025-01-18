@@ -11,7 +11,7 @@ def generate_sample_pdf(filename="books.pdf", num_books=100):
         title = f"Book Title {i}"
         author = f"Author {chr(65 + (i % 26))}"  # Cycle through A-Z
         isbn = f"ISBN-{100000000000 + i}"
-        
+
         book_info = f"Title: {title}\nAuthor: {author}\nISBN: {isbn}\n\n"
         para = Paragraph(book_info, styles['Normal'])
         story.append(para)
