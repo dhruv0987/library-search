@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Library Search</a>
+            <ul class="nav-links">
+                 <li><a href="index.html">Search</a></li>
+                  <li><a href="admin.html">Admin</a></li>
+             </ul>
+        </div>
+    </nav>
+    <div class="container admin-container">
+        <h1>Admin Login</h1>
+        <div id="login-form">
+            <input type="text" id="username" placeholder="Username" class="admin-input">
+            <input type="password" id="password" placeholder="Password" class="admin-input">
+            <button onclick="login()" class="admin-button">Login</button>
+            <p id="login-message" class="login-message"></p>
+        </div>
+        <div id="upload-form" style="display: none;">
+           
+            <h2>Upload PDF</h2>
+            <input type="file" id="pdf-file" class="admin-input">
+            <button onclick="uploadFile()" class="admin-button">Upload</button>
+            <p id="upload-message" class="upload-message"></p>
+        </div>
+         <div id="register-form">
+            <h2>Register Admin</h2>
+            <input type="text" id="register-username" placeholder="Username" class="admin-input">
+            <input type="password" id="register-password" placeholder="Password" class="admin-input">
+            <button onclick="register()" class="admin-button">Register</button>
+             <p id="register-message" class="register-message"></p>
+        </div>
+    </div>
+    <script src="upload.js"></script>
+     <script>
+        function showUploadForm() {
+            document.getElementById("login-form").style.display = "none";
+            document.getElementById("upload-form").style.display = "block";
+              document.getElementById("register-form").style.display = "none";
+        }
+
+          function showRegisterForm(){
+             document.getElementById("login-form").style.display = "none";
+            document.getElementById("upload-form").style.display = "none";
+             document.getElementById("register-form").style.display = "block";
+        }
+    </script>
+</body>
+</html>
