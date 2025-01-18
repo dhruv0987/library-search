@@ -1,67 +1,70 @@
 import os
-from pdf_process import process_pdf
 
-def create_searchable_page(pdf_path, output_file="../website/index.html"):
-    extracted_text = process_pdf(pdf_path)
-    if extracted_text is None:
-        print("Could not create webpage due to PDF processing failure.")
-        return
-
-    html_content_start = """
+def create_searchable_page(output_file="../website/index.html"):
+    html_content = """
     <!DOCTYPE html>
-    <html>
+    <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Library Search</title>
-        <style>
-            body { font-family: sans-serif; }
-            #search-box { margin-bottom: 20px; }
-            #results { white-space: pre-line; }
-        </style>
+        <link rel="stylesheet" href="style.css">
+        <script src="upload.js"></script>
     </head>
     <body>
-        <h1>Library Book Search</h1>
-        <input type="text" id="search-box" placeholder="Enter keywords...">
-        <button onclick="search()">Search</button>
-        <div id="results">
-    """
-    html_content_end =  """</div>
-    <script>
-        function search() {
-            const searchTerm = document.getElementById("search-box").value.toLowerCase();
-            const resultsDiv = document.getElementById("results");
-            const allText = `""" + extracted_text.replace('\n', '\\n') + """`.toLowerCase();
-            if (!searchTerm) {
-                resultsDiv.textContent = `""" + extracted_text + """`;
-                return;
-            }
-            const searchRegex = new RegExp(searchTerm, 'g');
-            let highlightedText = `""" + extracted_text + """`;
-            
-            
-             let match;
-                while ((match = searchRegex.exec(allText)) !== null) {
-                let actualStartIndex = match.index;
-                 let actualEndIndex = searchRegex.lastIndex;
-                    highlightedText = highlightedText.substring(0, actualStartIndex) +
-                       '<mark>' + highlightedText.substring(actualStartIndex, actualEndIndex) +
-                       '</mark>' + highlightedText.substring(actualEndIndex);
-                    // To prevent infinite loops when matching with empty string
-                   searchRegex.lastIndex = actualEndIndex;
-            }
-            resultsDiv.innerHTML = highlightedText;
+        <nav>
+            <div class="container">
+                <a href="#" class="logo">Library Search</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Search</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>Welcome to the Library</h1>
+            <input type="text" id="search-box" placeholder="Search books..." class="search-input">
+            <button onclick="search()" class="search-button">Search</button>
+            <div id="results" class="results-container"></div>
+           
+        </div>
+        <script>
+            function search() {
+               
+                const searchTerm = document.getElementById("search-box").value.toLowerCase();
+                const resultsDiv = document.getElementById("results");
 
-        }
-    </script>
+                // Retrieve text from local storage
+                const allText = localStorage.getItem('processedText');
+                if (!allText) {
+                    resultsDiv.textContent = "No text available for search.";
+                    return;
+                }
+
+                if (!searchTerm) {
+                    resultsDiv.innerHTML = allText.replace(/\\n/g, '<br>');
+                    return;
+                }
+                const searchRegex = new RegExp(searchTerm, 'g');
+                let highlightedText = allText;
+                let match;
+                    while ((match = searchRegex.exec(allText.toLowerCase())) !== null) {
+                    let actualStartIndex = match.index;
+                    let actualEndIndex = searchRegex.lastIndex;
+                        highlightedText = highlightedText.substring(0, actualStartIndex) +
+                            '<mark>' + highlightedText.substring(actualStartIndex, actualEndIndex) +
+                            '</mark>' + highlightedText.substring(actualEndIndex);
+                    searchRegex.lastIndex = actualEndIndex;
+                }
+                resultsDiv.innerHTML = highlightedText.replace(/\\n/g, '<br>');
+            }
+        </script>
     </body>
     </html>
     """
-    
-    html_content = html_content_start + extracted_text + html_content_end
-
 
     with open(output_file, "w") as f:
         f.write(html_content)
-
 if __name__ == "__main__":
-    create_searchable_page("../data/books.pdf")
+    create_searchable_page()
     print("index.html created")
