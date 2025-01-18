@@ -1,347 +1,58 @@
-
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Library Search</title>
-        <style>
-            body { font-family: sans-serif; }
-            #search-box { margin-bottom: 20px; }
-            #results { white-space: pre-line; }
-        </style>
-    </head>
-    <body>
-        <h1>Library Book Search</h1>
-        <input type="text" id="search-box" placeholder="Enter keywords...">
-        <button onclick="search()">Search</button>
-        <div id="results">
-    Title: Book Title 1 Author: Author B ISBN: ISBN-100000000001
-Title: Book Title 2 Author: Author C ISBN: ISBN-100000000002
-Title: Book Title 3 Author: Author D ISBN: ISBN-100000000003
-Title: Book Title 4 Author: Author E ISBN: ISBN-100000000004
-Title: Book Title 5 Author: Author F ISBN: ISBN-100000000005
-Title: Book Title 6 Author: Author G ISBN: ISBN-100000000006
-Title: Book Title 7 Author: Author H ISBN: ISBN-100000000007
-Title: Book Title 8 Author: Author I ISBN: ISBN-100000000008
-Title: Book Title 9 Author: Author J ISBN: ISBN-100000000009
-Title: Book Title 10 Author: Author K ISBN: ISBN-100000000010
-Title: Book Title 11 Author: Author L ISBN: ISBN-100000000011
-Title: Book Title 12 Author: Author M ISBN: ISBN-100000000012
-Title: Book Title 13 Author: Author N ISBN: ISBN-100000000013
-Title: Book Title 14 Author: Author O ISBN: ISBN-100000000014
-Title: Book Title 15 Author: Author P ISBN: ISBN-100000000015
-Title: Book Title 16 Author: Author Q ISBN: ISBN-100000000016
-Title: Book Title 17 Author: Author R ISBN: ISBN-100000000017
-Title: Book Title 18 Author: Author S ISBN: ISBN-100000000018
-Title: Book Title 19 Author: Author T ISBN: ISBN-100000000019
-Title: Book Title 20 Author: Author U ISBN: ISBN-100000000020
-Title: Book Title 21 Author: Author V ISBN: ISBN-100000000021
-Title: Book Title 22 Author: Author W ISBN: ISBN-100000000022
-Title: Book Title 23 Author: Author X ISBN: ISBN-100000000023
-Title: Book Title 24 Author: Author Y ISBN: ISBN-100000000024
-Title: Book Title 25 Author: Author Z ISBN: ISBN-100000000025
-Title: Book Title 26 Author: Author A ISBN: ISBN-100000000026
-Title: Book Title 27 Author: Author B ISBN: ISBN-100000000027
-Title: Book Title 28 Author: Author C ISBN: ISBN-100000000028
-Title: Book Title 29 Author: Author D ISBN: ISBN-100000000029
-Title: Book Title 30 Author: Author E ISBN: ISBN-100000000030
-Title: Book Title 31 Author: Author F ISBN: ISBN-100000000031
-Title: Book Title 32 Author: Author G ISBN: ISBN-100000000032
-Title: Book Title 33 Author: Author H ISBN: ISBN-100000000033
-Title: Book Title 34 Author: Author I ISBN: ISBN-100000000034
-Title: Book Title 35 Author: Author J ISBN: ISBN-100000000035
-Title: Book Title 36 Author: Author K ISBN: ISBN-100000000036
-Title: Book Title 37 Author: Author L ISBN: ISBN-100000000037
-Title: Book Title 38 Author: Author M ISBN: ISBN-100000000038
-Title: Book Title 39 Author: Author N ISBN: ISBN-100000000039
-Title: Book Title 40 Author: Author O ISBN: ISBN-100000000040
-Title: Book Title 41 Author: Author P ISBN: ISBN-100000000041
-Title: Book Title 42 Author: Author Q ISBN: ISBN-100000000042
-Title: Book Title 43 Author: Author R ISBN: ISBN-100000000043
-Title: Book Title 44 Author: Author S ISBN: ISBN-100000000044
-Title: Book Title 45 Author: Author T ISBN: ISBN-100000000045
-Title: Book Title 46 Author: Author U ISBN: ISBN-100000000046
-Title: Book Title 47 Author: Author V ISBN: ISBN-100000000047
-Title: Book Title 48 Author: Author W ISBN: ISBN-100000000048
-Title: Book Title 49 Author: Author X ISBN: ISBN-100000000049
-Title: Book Title 50 Author: Author Y ISBN: ISBN-100000000050
-Title: Book Title 51 Author: Author Z ISBN: ISBN-100000000051
-Title: Book Title 52 Author: Author A ISBN: ISBN-100000000052
-Title: Book Title 53 Author: Author B ISBN: ISBN-100000000053
-Title: Book Title 54 Author: Author C ISBN: ISBN-100000000054
-Title: Book Title 55 Author: Author D ISBN: ISBN-100000000055
-Title: Book Title 56 Author: Author E ISBN: ISBN-100000000056
-Title: Book Title 57 Author: Author F ISBN: ISBN-100000000057
-Title: Book Title 58 Author: Author G ISBN: ISBN-100000000058
-Title: Book Title 59 Author: Author H ISBN: ISBN-100000000059
-Title: Book Title 60 Author: Author I ISBN: ISBN-100000000060
-Title: Book Title 61 Author: Author J ISBN: ISBN-100000000061
-Title: Book Title 62 Author: Author K ISBN: ISBN-100000000062
-Title: Book Title 63 Author: Author L ISBN: ISBN-100000000063
-Title: Book Title 64 Author: Author M ISBN: ISBN-100000000064
-Title: Book Title 65 Author: Author N ISBN: ISBN-100000000065
-Title: Book Title 66 Author: Author O ISBN: ISBN-100000000066
-Title: Book Title 67 Author: Author P ISBN: ISBN-100000000067
-Title: Book Title 68 Author: Author Q ISBN: ISBN-100000000068
-Title: Book Title 69 Author: Author R ISBN: ISBN-100000000069
-Title: Book Title 70 Author: Author S ISBN: ISBN-100000000070
-Title: Book Title 71 Author: Author T ISBN: ISBN-100000000071
-Title: Book Title 72 Author: Author U ISBN: ISBN-100000000072
-Title: Book Title 73 Author: Author V ISBN: ISBN-100000000073
-Title: Book Title 74 Author: Author W ISBN: ISBN-100000000074
-Title: Book Title 75 Author: Author X ISBN: ISBN-100000000075
-Title: Book Title 76 Author: Author Y ISBN: ISBN-100000000076
-Title: Book Title 77 Author: Author Z ISBN: ISBN-100000000077
-Title: Book Title 78 Author: Author A ISBN: ISBN-100000000078
-Title: Book Title 79 Author: Author B ISBN: ISBN-100000000079
-Title: Book Title 80 Author: Author C ISBN: ISBN-100000000080
-Title: Book Title 81 Author: Author D ISBN: ISBN-100000000081
-Title: Book Title 82 Author: Author E ISBN: ISBN-100000000082
-Title: Book Title 83 Author: Author F ISBN: ISBN-100000000083
-Title: Book Title 84 Author: Author G ISBN: ISBN-100000000084
-Title: Book Title 85 Author: Author H ISBN: ISBN-100000000085
-Title: Book Title 86 Author: Author I ISBN: ISBN-100000000086
-Title: Book Title 87 Author: Author J ISBN: ISBN-100000000087
-Title: Book Title 88 Author: Author K ISBN: ISBN-100000000088
-Title: Book Title 89 Author: Author L ISBN: ISBN-100000000089
-Title: Book Title 90 Author: Author M ISBN: ISBN-100000000090
-Title: Book Title 91 Author: Author N ISBN: ISBN-100000000091
-Title: Book Title 92 Author: Author O ISBN: ISBN-100000000092
-Title: Book Title 93 Author: Author P ISBN: ISBN-100000000093
-Title: Book Title 94 Author: Author Q ISBN: ISBN-100000000094
-Title: Book Title 95 Author: Author R ISBN: ISBN-100000000095
-Title: Book Title 96 Author: Author S ISBN: ISBN-100000000096
-Title: Book Title 97 Author: Author T ISBN: ISBN-100000000097
-Title: Book Title 98 Author: Author U ISBN: ISBN-100000000098
-Title: Book Title 99 Author: Author V ISBN: ISBN-100000000099
-Title: Book Title 100 Author: Author W ISBN: ISBN-100000000100
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Search</title>
+     <link rel="stylesheet" href="https://github.com/dhruv0987/library-search/blob/master/docs/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Library Search</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="admin-panel" style="display: none;">
+            <h2>Admin Panel</h2>
+            <input type="file" id="pdf-file" class="admin-input">
+            <button onclick="uploadFile()" class="admin-button">Upload</button>
+            <p id="upload-message" class="admin-message"></p>
+        </div>
+        <div id="admin-login-form" style="display: block;">
+            <h2>Admin Login</h2>
+            <input type="text" id="username" placeholder="Username" class="admin-input">
+            <input type="password" id="password" placeholder="Password" class="admin-input">
+            <button onclick="login()" class="admin-button">Login</button>
+            <p id="login-message" class="admin-message"></p>
+        </div>
+        <div id="admin-register-form" style="display: none;">
+                <h2>Register Admin</h2>
+                <input type="text" id="register-username" placeholder="Username" class="admin-input">
+                <input type="password" id="register-password" placeholder="Password" class="admin-input">
+                <button onclick="register()" class="admin-button">Register</button>
+                <p id="register-message" class="admin-message"></p>
+        </div>
+        <div class="search-area">
+            <h1>Welcome to the Library</h1>
+            <input type="text" id="search-box" placeholder="Search books..." class="search-input">
+            <button onclick="search()" class="search-button">Search</button>
+            <div id="results" class="results-container"></div>
+        </div>
+    </div>
+    <script src="upload.js"></script>
     <script>
-        function search() {
-            const searchTerm = document.getElementById("search-box").value.toLowerCase();
-            const resultsDiv = document.getElementById("results");
-            const allText = `Title: Book Title 1 Author: Author B ISBN: ISBN-100000000001\nTitle: Book Title 2 Author: Author C ISBN: ISBN-100000000002\nTitle: Book Title 3 Author: Author D ISBN: ISBN-100000000003\nTitle: Book Title 4 Author: Author E ISBN: ISBN-100000000004\nTitle: Book Title 5 Author: Author F ISBN: ISBN-100000000005\nTitle: Book Title 6 Author: Author G ISBN: ISBN-100000000006\nTitle: Book Title 7 Author: Author H ISBN: ISBN-100000000007\nTitle: Book Title 8 Author: Author I ISBN: ISBN-100000000008\nTitle: Book Title 9 Author: Author J ISBN: ISBN-100000000009\nTitle: Book Title 10 Author: Author K ISBN: ISBN-100000000010\nTitle: Book Title 11 Author: Author L ISBN: ISBN-100000000011\nTitle: Book Title 12 Author: Author M ISBN: ISBN-100000000012\nTitle: Book Title 13 Author: Author N ISBN: ISBN-100000000013\nTitle: Book Title 14 Author: Author O ISBN: ISBN-100000000014\nTitle: Book Title 15 Author: Author P ISBN: ISBN-100000000015\nTitle: Book Title 16 Author: Author Q ISBN: ISBN-100000000016\nTitle: Book Title 17 Author: Author R ISBN: ISBN-100000000017\nTitle: Book Title 18 Author: Author S ISBN: ISBN-100000000018\nTitle: Book Title 19 Author: Author T ISBN: ISBN-100000000019\nTitle: Book Title 20 Author: Author U ISBN: ISBN-100000000020\nTitle: Book Title 21 Author: Author V ISBN: ISBN-100000000021\nTitle: Book Title 22 Author: Author W ISBN: ISBN-100000000022\nTitle: Book Title 23 Author: Author X ISBN: ISBN-100000000023\nTitle: Book Title 24 Author: Author Y ISBN: ISBN-100000000024\nTitle: Book Title 25 Author: Author Z ISBN: ISBN-100000000025\nTitle: Book Title 26 Author: Author A ISBN: ISBN-100000000026\nTitle: Book Title 27 Author: Author B ISBN: ISBN-100000000027\nTitle: Book Title 28 Author: Author C ISBN: ISBN-100000000028\nTitle: Book Title 29 Author: Author D ISBN: ISBN-100000000029\nTitle: Book Title 30 Author: Author E ISBN: ISBN-100000000030\nTitle: Book Title 31 Author: Author F ISBN: ISBN-100000000031\nTitle: Book Title 32 Author: Author G ISBN: ISBN-100000000032\nTitle: Book Title 33 Author: Author H ISBN: ISBN-100000000033\nTitle: Book Title 34 Author: Author I ISBN: ISBN-100000000034\nTitle: Book Title 35 Author: Author J ISBN: ISBN-100000000035\nTitle: Book Title 36 Author: Author K ISBN: ISBN-100000000036\nTitle: Book Title 37 Author: Author L ISBN: ISBN-100000000037\nTitle: Book Title 38 Author: Author M ISBN: ISBN-100000000038\nTitle: Book Title 39 Author: Author N ISBN: ISBN-100000000039\nTitle: Book Title 40 Author: Author O ISBN: ISBN-100000000040\nTitle: Book Title 41 Author: Author P ISBN: ISBN-100000000041\nTitle: Book Title 42 Author: Author Q ISBN: ISBN-100000000042\nTitle: Book Title 43 Author: Author R ISBN: ISBN-100000000043\nTitle: Book Title 44 Author: Author S ISBN: ISBN-100000000044\nTitle: Book Title 45 Author: Author T ISBN: ISBN-100000000045\nTitle: Book Title 46 Author: Author U ISBN: ISBN-100000000046\nTitle: Book Title 47 Author: Author V ISBN: ISBN-100000000047\nTitle: Book Title 48 Author: Author W ISBN: ISBN-100000000048\nTitle: Book Title 49 Author: Author X ISBN: ISBN-100000000049\nTitle: Book Title 50 Author: Author Y ISBN: ISBN-100000000050\nTitle: Book Title 51 Author: Author Z ISBN: ISBN-100000000051\nTitle: Book Title 52 Author: Author A ISBN: ISBN-100000000052\nTitle: Book Title 53 Author: Author B ISBN: ISBN-100000000053\nTitle: Book Title 54 Author: Author C ISBN: ISBN-100000000054\nTitle: Book Title 55 Author: Author D ISBN: ISBN-100000000055\nTitle: Book Title 56 Author: Author E ISBN: ISBN-100000000056\nTitle: Book Title 57 Author: Author F ISBN: ISBN-100000000057\nTitle: Book Title 58 Author: Author G ISBN: ISBN-100000000058\nTitle: Book Title 59 Author: Author H ISBN: ISBN-100000000059\nTitle: Book Title 60 Author: Author I ISBN: ISBN-100000000060\nTitle: Book Title 61 Author: Author J ISBN: ISBN-100000000061\nTitle: Book Title 62 Author: Author K ISBN: ISBN-100000000062\nTitle: Book Title 63 Author: Author L ISBN: ISBN-100000000063\nTitle: Book Title 64 Author: Author M ISBN: ISBN-100000000064\nTitle: Book Title 65 Author: Author N ISBN: ISBN-100000000065\nTitle: Book Title 66 Author: Author O ISBN: ISBN-100000000066\nTitle: Book Title 67 Author: Author P ISBN: ISBN-100000000067\nTitle: Book Title 68 Author: Author Q ISBN: ISBN-100000000068\nTitle: Book Title 69 Author: Author R ISBN: ISBN-100000000069\nTitle: Book Title 70 Author: Author S ISBN: ISBN-100000000070\nTitle: Book Title 71 Author: Author T ISBN: ISBN-100000000071\nTitle: Book Title 72 Author: Author U ISBN: ISBN-100000000072\nTitle: Book Title 73 Author: Author V ISBN: ISBN-100000000073\nTitle: Book Title 74 Author: Author W ISBN: ISBN-100000000074\nTitle: Book Title 75 Author: Author X ISBN: ISBN-100000000075\nTitle: Book Title 76 Author: Author Y ISBN: ISBN-100000000076\nTitle: Book Title 77 Author: Author Z ISBN: ISBN-100000000077\nTitle: Book Title 78 Author: Author A ISBN: ISBN-100000000078\nTitle: Book Title 79 Author: Author B ISBN: ISBN-100000000079\nTitle: Book Title 80 Author: Author C ISBN: ISBN-100000000080\nTitle: Book Title 81 Author: Author D ISBN: ISBN-100000000081\nTitle: Book Title 82 Author: Author E ISBN: ISBN-100000000082\nTitle: Book Title 83 Author: Author F ISBN: ISBN-100000000083\nTitle: Book Title 84 Author: Author G ISBN: ISBN-100000000084\nTitle: Book Title 85 Author: Author H ISBN: ISBN-100000000085\nTitle: Book Title 86 Author: Author I ISBN: ISBN-100000000086\nTitle: Book Title 87 Author: Author J ISBN: ISBN-100000000087\nTitle: Book Title 88 Author: Author K ISBN: ISBN-100000000088\nTitle: Book Title 89 Author: Author L ISBN: ISBN-100000000089\nTitle: Book Title 90 Author: Author M ISBN: ISBN-100000000090\nTitle: Book Title 91 Author: Author N ISBN: ISBN-100000000091\nTitle: Book Title 92 Author: Author O ISBN: ISBN-100000000092\nTitle: Book Title 93 Author: Author P ISBN: ISBN-100000000093\nTitle: Book Title 94 Author: Author Q ISBN: ISBN-100000000094\nTitle: Book Title 95 Author: Author R ISBN: ISBN-100000000095\nTitle: Book Title 96 Author: Author S ISBN: ISBN-100000000096\nTitle: Book Title 97 Author: Author T ISBN: ISBN-100000000097\nTitle: Book Title 98 Author: Author U ISBN: ISBN-100000000098\nTitle: Book Title 99 Author: Author V ISBN: ISBN-100000000099\nTitle: Book Title 100 Author: Author W ISBN: ISBN-100000000100\n`.toLowerCase();
-            if (!searchTerm) {
-                resultsDiv.textContent = `Title: Book Title 1 Author: Author B ISBN: ISBN-100000000001
-Title: Book Title 2 Author: Author C ISBN: ISBN-100000000002
-Title: Book Title 3 Author: Author D ISBN: ISBN-100000000003
-Title: Book Title 4 Author: Author E ISBN: ISBN-100000000004
-Title: Book Title 5 Author: Author F ISBN: ISBN-100000000005
-Title: Book Title 6 Author: Author G ISBN: ISBN-100000000006
-Title: Book Title 7 Author: Author H ISBN: ISBN-100000000007
-Title: Book Title 8 Author: Author I ISBN: ISBN-100000000008
-Title: Book Title 9 Author: Author J ISBN: ISBN-100000000009
-Title: Book Title 10 Author: Author K ISBN: ISBN-100000000010
-Title: Book Title 11 Author: Author L ISBN: ISBN-100000000011
-Title: Book Title 12 Author: Author M ISBN: ISBN-100000000012
-Title: Book Title 13 Author: Author N ISBN: ISBN-100000000013
-Title: Book Title 14 Author: Author O ISBN: ISBN-100000000014
-Title: Book Title 15 Author: Author P ISBN: ISBN-100000000015
-Title: Book Title 16 Author: Author Q ISBN: ISBN-100000000016
-Title: Book Title 17 Author: Author R ISBN: ISBN-100000000017
-Title: Book Title 18 Author: Author S ISBN: ISBN-100000000018
-Title: Book Title 19 Author: Author T ISBN: ISBN-100000000019
-Title: Book Title 20 Author: Author U ISBN: ISBN-100000000020
-Title: Book Title 21 Author: Author V ISBN: ISBN-100000000021
-Title: Book Title 22 Author: Author W ISBN: ISBN-100000000022
-Title: Book Title 23 Author: Author X ISBN: ISBN-100000000023
-Title: Book Title 24 Author: Author Y ISBN: ISBN-100000000024
-Title: Book Title 25 Author: Author Z ISBN: ISBN-100000000025
-Title: Book Title 26 Author: Author A ISBN: ISBN-100000000026
-Title: Book Title 27 Author: Author B ISBN: ISBN-100000000027
-Title: Book Title 28 Author: Author C ISBN: ISBN-100000000028
-Title: Book Title 29 Author: Author D ISBN: ISBN-100000000029
-Title: Book Title 30 Author: Author E ISBN: ISBN-100000000030
-Title: Book Title 31 Author: Author F ISBN: ISBN-100000000031
-Title: Book Title 32 Author: Author G ISBN: ISBN-100000000032
-Title: Book Title 33 Author: Author H ISBN: ISBN-100000000033
-Title: Book Title 34 Author: Author I ISBN: ISBN-100000000034
-Title: Book Title 35 Author: Author J ISBN: ISBN-100000000035
-Title: Book Title 36 Author: Author K ISBN: ISBN-100000000036
-Title: Book Title 37 Author: Author L ISBN: ISBN-100000000037
-Title: Book Title 38 Author: Author M ISBN: ISBN-100000000038
-Title: Book Title 39 Author: Author N ISBN: ISBN-100000000039
-Title: Book Title 40 Author: Author O ISBN: ISBN-100000000040
-Title: Book Title 41 Author: Author P ISBN: ISBN-100000000041
-Title: Book Title 42 Author: Author Q ISBN: ISBN-100000000042
-Title: Book Title 43 Author: Author R ISBN: ISBN-100000000043
-Title: Book Title 44 Author: Author S ISBN: ISBN-100000000044
-Title: Book Title 45 Author: Author T ISBN: ISBN-100000000045
-Title: Book Title 46 Author: Author U ISBN: ISBN-100000000046
-Title: Book Title 47 Author: Author V ISBN: ISBN-100000000047
-Title: Book Title 48 Author: Author W ISBN: ISBN-100000000048
-Title: Book Title 49 Author: Author X ISBN: ISBN-100000000049
-Title: Book Title 50 Author: Author Y ISBN: ISBN-100000000050
-Title: Book Title 51 Author: Author Z ISBN: ISBN-100000000051
-Title: Book Title 52 Author: Author A ISBN: ISBN-100000000052
-Title: Book Title 53 Author: Author B ISBN: ISBN-100000000053
-Title: Book Title 54 Author: Author C ISBN: ISBN-100000000054
-Title: Book Title 55 Author: Author D ISBN: ISBN-100000000055
-Title: Book Title 56 Author: Author E ISBN: ISBN-100000000056
-Title: Book Title 57 Author: Author F ISBN: ISBN-100000000057
-Title: Book Title 58 Author: Author G ISBN: ISBN-100000000058
-Title: Book Title 59 Author: Author H ISBN: ISBN-100000000059
-Title: Book Title 60 Author: Author I ISBN: ISBN-100000000060
-Title: Book Title 61 Author: Author J ISBN: ISBN-100000000061
-Title: Book Title 62 Author: Author K ISBN: ISBN-100000000062
-Title: Book Title 63 Author: Author L ISBN: ISBN-100000000063
-Title: Book Title 64 Author: Author M ISBN: ISBN-100000000064
-Title: Book Title 65 Author: Author N ISBN: ISBN-100000000065
-Title: Book Title 66 Author: Author O ISBN: ISBN-100000000066
-Title: Book Title 67 Author: Author P ISBN: ISBN-100000000067
-Title: Book Title 68 Author: Author Q ISBN: ISBN-100000000068
-Title: Book Title 69 Author: Author R ISBN: ISBN-100000000069
-Title: Book Title 70 Author: Author S ISBN: ISBN-100000000070
-Title: Book Title 71 Author: Author T ISBN: ISBN-100000000071
-Title: Book Title 72 Author: Author U ISBN: ISBN-100000000072
-Title: Book Title 73 Author: Author V ISBN: ISBN-100000000073
-Title: Book Title 74 Author: Author W ISBN: ISBN-100000000074
-Title: Book Title 75 Author: Author X ISBN: ISBN-100000000075
-Title: Book Title 76 Author: Author Y ISBN: ISBN-100000000076
-Title: Book Title 77 Author: Author Z ISBN: ISBN-100000000077
-Title: Book Title 78 Author: Author A ISBN: ISBN-100000000078
-Title: Book Title 79 Author: Author B ISBN: ISBN-100000000079
-Title: Book Title 80 Author: Author C ISBN: ISBN-100000000080
-Title: Book Title 81 Author: Author D ISBN: ISBN-100000000081
-Title: Book Title 82 Author: Author E ISBN: ISBN-100000000082
-Title: Book Title 83 Author: Author F ISBN: ISBN-100000000083
-Title: Book Title 84 Author: Author G ISBN: ISBN-100000000084
-Title: Book Title 85 Author: Author H ISBN: ISBN-100000000085
-Title: Book Title 86 Author: Author I ISBN: ISBN-100000000086
-Title: Book Title 87 Author: Author J ISBN: ISBN-100000000087
-Title: Book Title 88 Author: Author K ISBN: ISBN-100000000088
-Title: Book Title 89 Author: Author L ISBN: ISBN-100000000089
-Title: Book Title 90 Author: Author M ISBN: ISBN-100000000090
-Title: Book Title 91 Author: Author N ISBN: ISBN-100000000091
-Title: Book Title 92 Author: Author O ISBN: ISBN-100000000092
-Title: Book Title 93 Author: Author P ISBN: ISBN-100000000093
-Title: Book Title 94 Author: Author Q ISBN: ISBN-100000000094
-Title: Book Title 95 Author: Author R ISBN: ISBN-100000000095
-Title: Book Title 96 Author: Author S ISBN: ISBN-100000000096
-Title: Book Title 97 Author: Author T ISBN: ISBN-100000000097
-Title: Book Title 98 Author: Author U ISBN: ISBN-100000000098
-Title: Book Title 99 Author: Author V ISBN: ISBN-100000000099
-Title: Book Title 100 Author: Author W ISBN: ISBN-100000000100
-`;
-                return;
-            }
-            const searchRegex = new RegExp(searchTerm, 'g');
-            let highlightedText = `Title: Book Title 1 Author: Author B ISBN: ISBN-100000000001
-Title: Book Title 2 Author: Author C ISBN: ISBN-100000000002
-Title: Book Title 3 Author: Author D ISBN: ISBN-100000000003
-Title: Book Title 4 Author: Author E ISBN: ISBN-100000000004
-Title: Book Title 5 Author: Author F ISBN: ISBN-100000000005
-Title: Book Title 6 Author: Author G ISBN: ISBN-100000000006
-Title: Book Title 7 Author: Author H ISBN: ISBN-100000000007
-Title: Book Title 8 Author: Author I ISBN: ISBN-100000000008
-Title: Book Title 9 Author: Author J ISBN: ISBN-100000000009
-Title: Book Title 10 Author: Author K ISBN: ISBN-100000000010
-Title: Book Title 11 Author: Author L ISBN: ISBN-100000000011
-Title: Book Title 12 Author: Author M ISBN: ISBN-100000000012
-Title: Book Title 13 Author: Author N ISBN: ISBN-100000000013
-Title: Book Title 14 Author: Author O ISBN: ISBN-100000000014
-Title: Book Title 15 Author: Author P ISBN: ISBN-100000000015
-Title: Book Title 16 Author: Author Q ISBN: ISBN-100000000016
-Title: Book Title 17 Author: Author R ISBN: ISBN-100000000017
-Title: Book Title 18 Author: Author S ISBN: ISBN-100000000018
-Title: Book Title 19 Author: Author T ISBN: ISBN-100000000019
-Title: Book Title 20 Author: Author U ISBN: ISBN-100000000020
-Title: Book Title 21 Author: Author V ISBN: ISBN-100000000021
-Title: Book Title 22 Author: Author W ISBN: ISBN-100000000022
-Title: Book Title 23 Author: Author X ISBN: ISBN-100000000023
-Title: Book Title 24 Author: Author Y ISBN: ISBN-100000000024
-Title: Book Title 25 Author: Author Z ISBN: ISBN-100000000025
-Title: Book Title 26 Author: Author A ISBN: ISBN-100000000026
-Title: Book Title 27 Author: Author B ISBN: ISBN-100000000027
-Title: Book Title 28 Author: Author C ISBN: ISBN-100000000028
-Title: Book Title 29 Author: Author D ISBN: ISBN-100000000029
-Title: Book Title 30 Author: Author E ISBN: ISBN-100000000030
-Title: Book Title 31 Author: Author F ISBN: ISBN-100000000031
-Title: Book Title 32 Author: Author G ISBN: ISBN-100000000032
-Title: Book Title 33 Author: Author H ISBN: ISBN-100000000033
-Title: Book Title 34 Author: Author I ISBN: ISBN-100000000034
-Title: Book Title 35 Author: Author J ISBN: ISBN-100000000035
-Title: Book Title 36 Author: Author K ISBN: ISBN-100000000036
-Title: Book Title 37 Author: Author L ISBN: ISBN-100000000037
-Title: Book Title 38 Author: Author M ISBN: ISBN-100000000038
-Title: Book Title 39 Author: Author N ISBN: ISBN-100000000039
-Title: Book Title 40 Author: Author O ISBN: ISBN-100000000040
-Title: Book Title 41 Author: Author P ISBN: ISBN-100000000041
-Title: Book Title 42 Author: Author Q ISBN: ISBN-100000000042
-Title: Book Title 43 Author: Author R ISBN: ISBN-100000000043
-Title: Book Title 44 Author: Author S ISBN: ISBN-100000000044
-Title: Book Title 45 Author: Author T ISBN: ISBN-100000000045
-Title: Book Title 46 Author: Author U ISBN: ISBN-100000000046
-Title: Book Title 47 Author: Author V ISBN: ISBN-100000000047
-Title: Book Title 48 Author: Author W ISBN: ISBN-100000000048
-Title: Book Title 49 Author: Author X ISBN: ISBN-100000000049
-Title: Book Title 50 Author: Author Y ISBN: ISBN-100000000050
-Title: Book Title 51 Author: Author Z ISBN: ISBN-100000000051
-Title: Book Title 52 Author: Author A ISBN: ISBN-100000000052
-Title: Book Title 53 Author: Author B ISBN: ISBN-100000000053
-Title: Book Title 54 Author: Author C ISBN: ISBN-100000000054
-Title: Book Title 55 Author: Author D ISBN: ISBN-100000000055
-Title: Book Title 56 Author: Author E ISBN: ISBN-100000000056
-Title: Book Title 57 Author: Author F ISBN: ISBN-100000000057
-Title: Book Title 58 Author: Author G ISBN: ISBN-100000000058
-Title: Book Title 59 Author: Author H ISBN: ISBN-100000000059
-Title: Book Title 60 Author: Author I ISBN: ISBN-100000000060
-Title: Book Title 61 Author: Author J ISBN: ISBN-100000000061
-Title: Book Title 62 Author: Author K ISBN: ISBN-100000000062
-Title: Book Title 63 Author: Author L ISBN: ISBN-100000000063
-Title: Book Title 64 Author: Author M ISBN: ISBN-100000000064
-Title: Book Title 65 Author: Author N ISBN: ISBN-100000000065
-Title: Book Title 66 Author: Author O ISBN: ISBN-100000000066
-Title: Book Title 67 Author: Author P ISBN: ISBN-100000000067
-Title: Book Title 68 Author: Author Q ISBN: ISBN-100000000068
-Title: Book Title 69 Author: Author R ISBN: ISBN-100000000069
-Title: Book Title 70 Author: Author S ISBN: ISBN-100000000070
-Title: Book Title 71 Author: Author T ISBN: ISBN-100000000071
-Title: Book Title 72 Author: Author U ISBN: ISBN-100000000072
-Title: Book Title 73 Author: Author V ISBN: ISBN-100000000073
-Title: Book Title 74 Author: Author W ISBN: ISBN-100000000074
-Title: Book Title 75 Author: Author X ISBN: ISBN-100000000075
-Title: Book Title 76 Author: Author Y ISBN: ISBN-100000000076
-Title: Book Title 77 Author: Author Z ISBN: ISBN-100000000077
-Title: Book Title 78 Author: Author A ISBN: ISBN-100000000078
-Title: Book Title 79 Author: Author B ISBN: ISBN-100000000079
-Title: Book Title 80 Author: Author C ISBN: ISBN-100000000080
-Title: Book Title 81 Author: Author D ISBN: ISBN-100000000081
-Title: Book Title 82 Author: Author E ISBN: ISBN-100000000082
-Title: Book Title 83 Author: Author F ISBN: ISBN-100000000083
-Title: Book Title 84 Author: Author G ISBN: ISBN-100000000084
-Title: Book Title 85 Author: Author H ISBN: ISBN-100000000085
-Title: Book Title 86 Author: Author I ISBN: ISBN-100000000086
-Title: Book Title 87 Author: Author J ISBN: ISBN-100000000087
-Title: Book Title 88 Author: Author K ISBN: ISBN-100000000088
-Title: Book Title 89 Author: Author L ISBN: ISBN-100000000089
-Title: Book Title 90 Author: Author M ISBN: ISBN-100000000090
-Title: Book Title 91 Author: Author N ISBN: ISBN-100000000091
-Title: Book Title 92 Author: Author O ISBN: ISBN-100000000092
-Title: Book Title 93 Author: Author P ISBN: ISBN-100000000093
-Title: Book Title 94 Author: Author Q ISBN: ISBN-100000000094
-Title: Book Title 95 Author: Author R ISBN: ISBN-100000000095
-Title: Book Title 96 Author: Author S ISBN: ISBN-100000000096
-Title: Book Title 97 Author: Author T ISBN: ISBN-100000000097
-Title: Book Title 98 Author: Author U ISBN: ISBN-100000000098
-Title: Book Title 99 Author: Author V ISBN: ISBN-100000000099
-Title: Book Title 100 Author: Author W ISBN: ISBN-100000000100
-`;
-            
-            
-             let match;
-                while ((match = searchRegex.exec(allText)) !== null) {
-                let actualStartIndex = match.index;
-                 let actualEndIndex = searchRegex.lastIndex;
-                    highlightedText = highlightedText.substring(0, actualStartIndex) +
-                       '<mark>' + highlightedText.substring(actualStartIndex, actualEndIndex) +
-                       '</mark>' + highlightedText.substring(actualEndIndex);
-                    // To prevent infinite loops when matching with empty string
-                   searchRegex.lastIndex = actualEndIndex;
-            }
-            resultsDiv.innerHTML = highlightedText;
+        function showRegisterForm(){
+            document.getElementById("admin-login-form").style.display = "none";
+            document.getElementById("admin-panel").style.display = "none";
+            document.getElementById("admin-register-form").style.display = "block";
 
         }
+        function showLoginForm(){
+            document.getElementById("admin-login-form").style.display = "block";
+            document.getElementById("admin-panel").style.display = "none";
+            document.getElementById("admin-register-form").style.display = "none";
+        }
     </script>
-    </body>
-    </html>
-    
+</body>
+</html>
